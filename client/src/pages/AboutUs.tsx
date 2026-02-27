@@ -51,15 +51,15 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
-              Established in 2012, Arena Web Security was founded on a clear realization: traditional academic pathways were not aligned with the rapidly evolving demands of the Cyber Security industry.
+              Arena Web Security is a government-recognized technical education institute in Bangladesh, officially registered and accredited by the Bangladesh Technical Education Board (BTEB) and the National Skills Development Authority (NSDA), Government of the People's Republic of Bangladesh.
             </p>
 
             <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
-              We established Arena to bridge that gap by focusing exclusively on a structured Professional Diploma in Cyber Security, designed to deliver practical expertise, real-world defensive capability, and immediate career readiness.
+              We operate as an authorized technical and vocational education provider, delivering structured academic and professional diploma programs in Cyber Security in alignment with national education policies and skills development frameworks.
             </p>
 
             <p className="text-gray-600 text-[15px] leading-relaxed">
-              Today, Arena Web Security empowers ambitious individuals who seek industry-focused, hands-on Cyber Security education without the outdated timelines and theoretical limitations of conventional institutions.
+              Our academic activities are focused on curriculum-based instruction, laboratory-oriented learning, and applied cybersecurity education designed to meet both national and international standards.
             </p>
           </div>
 
