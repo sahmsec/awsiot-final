@@ -195,7 +195,7 @@ export function Footer() {
           <p>
             &copy; 2026 Arena Web Security Institute of Technology. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="hover:text-[#bb1133] transition-colors">
               Privacy Policy
             </Link>
@@ -205,7 +205,7 @@ export function Footer() {
             <Link href="#" className="hover:text-[#bb1133] transition-colors">
               Accessibility
             </Link>
-          </div>
+          </div> */}
         </div>
 
       </div>
