@@ -70,31 +70,44 @@ export default function Apply() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-gray-700">First Name <span className="text-primary">*</span></label>
-                    <input required type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="John" />
+                    <input required type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="First Name" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-gray-700">Last Name <span className="text-primary">*</span></label>
-                    <input required type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="Doe" />
+                    <input required type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="Last Name" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700">Email Address <span className="text-primary">*</span></label>
-                  <input required type="email" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="john.doe@example.com" />
+                  <input required type="email" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white" placeholder="name@example.com" />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-gray-700">
+                    Phone Number <span className="text-primary">*</span>
+                  </label>
+                  <input
+                    required
+                    type="tel"
+                    name="phone"
+                    placeholder="+880 1234567890"
+                    pattern="^\+?[0-9\s\-]{7,15}$"
+                    className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white"
+                  />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700">Program of Interest <span className="text-primary">*</span></label>
                   <select required className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white">
                     <option value="" disabled selected>Select a program...</option>
-                    <option value="undergrad">Undergraduate - B.S. Cybersecurity</option>
-                    <option value="grad">Graduate - M.S. Information Security</option>
-                    <option value="cert">Professional Certification - Ethical Hacking</option>
+                    <option value="undergrad">Professional Diploma In Cyber Security</option>
+                    <option value="grad">Professional Certifications</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-gray-700">Why Arena Web Security? (Optional)</label>
+                  <label className="text-sm font-bold text-gray-700">Tell Us About Yourself (Optional)</label>
                   <textarea rows={4} className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50 focus:bg-white resize-none" placeholder="Tell us about your goals..."></textarea>
                 </div>
 

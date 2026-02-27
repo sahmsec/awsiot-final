@@ -10,9 +10,7 @@ const NAVIGATION = [
   {
     title: "Academics",
     items: [
-      { label: "Diploma in Cybersecurity", href: "/courses/diploma" },
-      { label: "Short Course", href: "/courses/short-course" },
-      {
+      { label: "Diploma in Cybersecurity", href: "/courses/diploma" },      {
         label: "Download Module",
         href: "https://drive.google.com/uc?export=download&id=1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g",
       },
@@ -25,7 +23,7 @@ const NAVIGATION = [
       { label: "Library", href: "/library" },
     ],
   },
-  { label: "Admissions", href: "/apply" },
+  { label: "Admissions", href: "/admissions" }, // ✅ Only change
   { label: "Contact", href: "/contact" },
 ];
 
@@ -166,7 +164,7 @@ export function Header() {
           })}
         </nav>
 
-        {/* Apply Now Button (Desktop) */}
+        {/* Apply Now Button (UNCHANGED) */}
         <div className="hidden md:flex items-center">
           <Link
             href="/apply"

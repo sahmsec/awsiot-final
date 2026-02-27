@@ -5,7 +5,7 @@ import { Maximize2, X } from "lucide-react";
 const IMAGES = [
   { src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop", alt: "Cybersecurity Lab" },
   { src: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop", alt: "Students Coding" },
-  { src: "https://images.unsplash.com/photo-1558494949-ef010cbdcc91?q=80&w=2070&auto=format&fit=crop", alt: "Network Hardware" },
+  { src: "https://images.unsplash.com/photo-1762163516269-3c143e04175c?q=80&w=2070&auto=format&fit=crop", alt: "Network Hardware" },
   { src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop", alt: "Hackathon Event" },
   { src: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=2069&auto=format&fit=crop", alt: "Server Room" },
   { src: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop", alt: "Data Analysis" },

@@ -80,7 +80,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    info@arenawebsecurity.net
+                    info@arenawebsecurity.net <br />
+                    dh@arenawebsecurity.edu.bd
                   </p>
                 </div>
               </div>
@@ -108,11 +109,11 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                  <input type="text" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                  <input type="text" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Your Name" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                  <input type="email" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
+                  <input type="email" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="name@example.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>

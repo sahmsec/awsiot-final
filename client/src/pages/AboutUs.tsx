@@ -51,22 +51,22 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
-              Founded in 2005, Arena Institute of Excellence emerged from a simple realization: traditional four-year undergraduate degrees were often out of sync with the rapid pace of industry evolution.
+              Established in 2012, Arena Web Security was founded on a clear realization: traditional academic pathways were not aligned with the rapidly evolving demands of the Cyber Security industry.
             </p>
 
             <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
-              We established Arena to bridge this gap. By focusing exclusively on targeted diplomas, short courses, and professional certifications, we built an institution dedicated to agility, practical skill acquisition, and immediate employability.
+              We established Arena to bridge that gap by focusing exclusively on a structured Professional Diploma in Cyber Security, designed to deliver practical expertise, real-world defensive capability, and immediate career readiness.
             </p>
 
             <p className="text-gray-600 text-[15px] leading-relaxed">
-              Today, our campus serves thousands of ambitious individuals seeking to pivot careers, upskill rapidly, or gain foundational expertise without the bloated timelines of conventional universities.
+              Today, Arena Web Security empowers ambitious individuals who seek industry-focused, hands-on Cyber Security education without the outdated timelines and theoretical limitations of conventional institutions.
             </p>
           </div>
 
           {/* Right Image */}
           <div className="relative pl-8">
             <img
-              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop"
+              src="/assets/aws17.webp"
               alt="Campus Building"
               className="rounded-xl shadow-xl w-full h-[380px] object-cover"
             />
@@ -74,7 +74,7 @@ export default function AboutUs() {
             {/* Floating Years Card */}
             <div className="absolute -bottom-8 left-0 bg-white shadow-xl rounded-xl p-8 w-72">
               <h3 className="text-2xl font-serif font-black text-gray-900 mb-2">
-                15+ Years
+                13+ Years
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Of pioneering practical, industry-first education paradigms.

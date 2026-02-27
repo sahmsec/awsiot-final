@@ -13,6 +13,7 @@ import Contact from "@/pages/Contact";
 import Course from "@/pages/Course";
 import Login from "@/pages/Login";
 import Library from "@/pages/Library";
+import Admissions from "@/pages/Admissions"
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
         <Route path="/library" component={Library} />
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
+        <Route path="/admissions" component={Admissions} />
         <Route path="/students" component={() => <div className="py-20 text-center">Students Page (Coming Soon)</div>} />
         <Route component={NotFound} />
 
