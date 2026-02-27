@@ -18,7 +18,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      
+
       {/* Wider Content Wrapper */}
       <div className="w-full max-w-3xl mx-auto text-center">
 
@@ -38,7 +38,7 @@ export default function Login() {
 
         {/* Wider Paragraph */}
         <p className="mt-8 text-gray-600 leading-relaxed text-lg max-w-2xl mx-auto">
-          The digital library portal contains proprietary databases and 
+          The digital library portal contains proprietary databases and
           requires an active student or faculty credential to access.
         </p>
 
@@ -80,9 +80,12 @@ export default function Login() {
         {/* IT Support */}
         <div className="mt-8 text-sm text-gray-500">
           Experiencing issues?{" "}
-          <span className="text-primary font-medium hover:underline cursor-pointer">
+          <a
+            href="mailto:dh@arenawebsecurity.edu.bd"
+            className="text-primary font-medium hover:underline cursor-pointer"
+          >
             Contact IT Support
-          </span>
+          </a>
         </div>
 
       </div>

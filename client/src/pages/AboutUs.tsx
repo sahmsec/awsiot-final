@@ -77,7 +77,7 @@ export default function AboutUs() {
                 13+ Years
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Of pioneering practical, industry-first education paradigms.
+                Of pioneering practical, industry-first education models.
               </p>
             </div>
           </div>

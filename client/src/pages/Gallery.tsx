@@ -5,7 +5,7 @@ import { Maximize2, X } from "lucide-react";
 const IMAGES = [
   { src: "/assets/aws6.webp", alt: "gallery image" },
   { src: "/assets/homefeature.png", alt: "gallery image" },
-  { src: "/assets/aws8.webp", alt: "gallery image" },
+  { src: "/assets/aws11.webp", alt: "gallery image" },
 
   { src: "/assets/aws7.webp", alt: "gallery image" },
   { src: "/assets/aws10.webp", alt: "gallery image" },
