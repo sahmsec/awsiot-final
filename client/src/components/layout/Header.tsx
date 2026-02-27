@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { ChevronDown, Menu, X, ShieldAlert } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -82,10 +82,14 @@ export function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        
+        {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="w-10 h-10 bg-primary rounded flex items-center justify-center group-hover:scale-105 transition-transform">
-            <ShieldAlert className="text-white w-6 h-6" />
-          </div>
+          <img
+            src="/assets/logo.png"
+            alt="Arena Web Security Logo"
+            className="h-12 w-auto object-contain"
+          />
           <div className="flex flex-col">
             <span className="font-serif font-bold text-gray-900 text-xl leading-tight tracking-wide">
               Arena Web Security
@@ -96,7 +100,7 @@ export function Header() {
           </div>
         </Link>
 
-          {/* Desktop Navigation */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-4">
           {NAVIGATION.map((navItem) => {
             if ("items" in navItem) {
