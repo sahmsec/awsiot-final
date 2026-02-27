@@ -57,7 +57,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">Our Location</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Our Campus</h3>
                   <p className="text-gray-600 leading-relaxed">
                     House No: 1, Block: B<br />
                     Banasree, Main Road, Rampura,<br />

@@ -19,9 +19,9 @@ export default function Home() {
           </span>
 
           {/* Slightly Reduced Title Size */}
-          <h1 className="text-5xl md:text-8xl font-serif font-black text-white text-shadow-md mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-serif font-black text-white text-shadow-md mb-8 leading-[1.1] tracking-tight">
             Master the Art of <br />
-            <span className="text-primary">Cybersecurity</span>
+            <span className="text-primary">Professional Diploma In Cybersecurity</span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-12 text-shadow-sm font-light">
@@ -85,7 +85,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-primary/10 rounded-2xl transform translate-x-4 translate-y-4 -z-10"></div>
               {/* coding students cybersecurity lab */}
               <img
-                src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop"
+                src="/assets/homefeature.png"
                 alt="Students in lab"
                 className="rounded-2xl shadow-2xl object-cover aspect-[4/3] w-full"
               />

@@ -82,13 +82,13 @@ export default function Course() {
             </ul>
 
             <a
-              href="https://drive.google.com/uc?export=download&id=1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g"
+              href="https://drive.google.com/file/d/1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-primary text-white px-6 py-4 rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
               <Download className="w-5 h-5" />
-              <span>Download Full Course Module</span>
+              <span>View Full Course Module</span>
             </a>
           </div>
 

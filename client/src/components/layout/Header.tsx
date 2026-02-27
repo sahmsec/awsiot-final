@@ -10,9 +10,10 @@ const NAVIGATION = [
   {
     title: "Academics",
     items: [
-      { label: "Diploma in Cybersecurity", href: "/courses/diploma" },      {
-        label: "Download Module",
-        href: "https://drive.google.com/uc?export=download&id=1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g",
+      { label: "Diploma in Cybersecurity", href: "/courses/diploma" },
+      {
+        label: "Course Module",
+        href: "https://drive.google.com/file/d/1zUvuT2YHsbMWECLM0eCmvTh3nMh1GM2g/view",
       },
     ],
   },
@@ -80,7 +81,7 @@ export function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        
+
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
           <img
