@@ -1,23 +1,28 @@
 import { Download } from "lucide-react";
+import { Link } from "wouter";
 
 export default function CourseModule() {
   return (
     <>
       {/* HERO SECTION */}
       <section className="relative py-32 overflow-hidden bg-[#3a000d]">
-        <img 
-          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" 
-          alt="Course Modules" 
+        <img
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+          alt="Course Modules"
           className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#5a0014] via-[#3a000d]/95 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-start">
-          <div className="inline-block border border-gray-600 rounded-full px-4 py-1 mb-6 bg-white/5 backdrop-blur-sm">
-            <span className="text-[#f59e0b] text-xs font-bold tracking-widest uppercase">
-              ACADEMICS / COURSE MODULES
+          <Link
+            href="/"
+            className="text-gray-300 hover:text-white text-sm mb-6 inline-flex items-center group transition-colors"
+          >
+            <span className="mr-2 group-hover:-translate-x-1 transition-transform">
+              &larr;
             </span>
-          </div>
+            Back to Home
+          </Link>
 
           <h1 className="text-5xl md:text-6xl font-serif font-black mb-6 leading-tight tracking-tight text-white max-w-3xl">
             Professional Diploma in Cyber Security (1 Year)

@@ -8,12 +8,12 @@ export default function Course() {
 
   // Only allow diploma
   if (type !== "diploma") {
-  return (
-    <div className="py-20 text-center text-3xl font-bold">
-      404 – Course Not Found
-    </div>
-  );
-}
+    return (
+      <div className="py-20 text-center text-3xl font-bold">
+        404 – Course Not Found
+      </div>
+    );
+  }
 
   const title = "Diploma in Cybersecurity";
   const duration = "1 Year";
@@ -33,11 +33,15 @@ export default function Course() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2a0008]/100 via-[#5a0014]/95 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-start">
-          <div className="inline-block border border-white/20 rounded-full px-4 py-1 mb-6 bg-white/5 backdrop-blur-md">
-            <span className="text-[#bb1133] text-xs font-bold tracking-widest uppercase">
-              ACADEMICS / DIPLOMA IN CYBERSECURITY
+          <Link
+            href="/"
+            className="text-gray-300 hover:text-white text-sm mb-6 inline-flex items-center group transition-colors"
+          >
+            <span className="mr-2 group-hover:-translate-x-1 transition-transform">
+              &larr;
             </span>
-          </div>
+            Back to Home
+          </Link>
 
           <h1 className="text-5xl md:text-6xl font-serif font-black mb-6 leading-tight tracking-tight text-white max-w-3xl">
             {title}
@@ -51,7 +55,7 @@ export default function Course() {
 
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
+
           {/* Main Content */}
           <div className="lg:col-span-2">
             <h2 className="text-4xl font-serif font-black mb-8 text-gray-900 tracking-tight">

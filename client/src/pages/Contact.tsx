@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Link } from "wouter";
+
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -23,11 +25,15 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2a0008]/100 via-[#5a0014]/95 to-transparent"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-start">
-          <div className="inline-block border border-white/20 rounded-full px-4 py-1 mb-6 bg-white/5 backdrop-blur-md">
-            <span className="text-[#bb1133] text-xs font-bold tracking-widest uppercase">
-              INFORMATION / CONTACT US
+          <Link
+            href="/"
+            className="text-gray-300 hover:text-white text-sm mb-6 inline-flex items-center group transition-colors"
+          >
+            <span className="mr-2 group-hover:-translate-x-1 transition-transform">
+              &larr;
             </span>
-          </div>
+            Back to Home
+          </Link>
 
           <h1 className="text-5xl md:text-6xl font-serif font-black mb-6 leading-tight tracking-tight text-white max-w-3xl">
             Contact Arena Institute
