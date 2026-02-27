@@ -23,9 +23,9 @@ export function Footer() {
               </div>
             </Link>
 
-            <p className="text-sm text-gray-400 leading-relaxed">
+            {/* <p className="text-sm text-gray-400 leading-relaxed">
               Empowering the next generation of cybersecurity leaders through practical, industry-aligned education and rigorous professional training programs.
-            </p>
+            </p> */}
 
             <ul className="space-y-4 text-sm mt-4">
               <li className="flex items-start space-x-3">
