@@ -1,33 +1,34 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { Link } from "wouter";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "wouter";
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 
 export default function Admissions() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [open, setOpen] = useState<number | null>(null);
 
   const faqs = [
     {
       question: "How long does the admission process take?",
       answer:
-        "Typically 2–4 weeks after all required documents are submitted.",
+        "The admission review process typically takes 2–4 weeks after all required documents have been submitted.",
     },
     {
       question: "Are scholarships available?",
       answer:
-        "Yes, merit-based and need-based scholarships are available for qualified students.",
+        "Yes. We offer merit-based and need-based scholarships for eligible students.",
     },
     {
       question: "Can international students apply?",
       answer:
-        "Absolutely. We welcome students from all countries and provide guidance for visa processing.",
+        "Absolutely. International applicants are welcome and will receive guidance throughout the admission process.",
     },
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <div className="w-full bg-white">
+
+
 
       {/* HERO SECTION */}
       <section className="relative py-24 overflow-hidden bg-[#5a0014]">
@@ -58,43 +59,57 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* CONTENT */}
+      {/* MAIN CONTENT */}
       <div className="max-w-6xl mx-auto px-6 py-20 space-y-20">
 
         {/* WHY CHOOSE US */}
-        <section className="space-y-10">
-          <h2 className="text-4xl font-serif font-bold text-center text-gray-900">
+        <section>
+          <h2 className="text-4xl font-serif font-bold text-center mb-12">
             Why Choose Us
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Industry-Focused Curriculum",
-                desc: "Designed with real industry partners to prepare you for high-demand careers.",
-              },
-              {
-                title: "Global Recognition",
-                desc: "International partnerships and accredited programs.",
-              },
-              {
-                title: "Modern Campus",
-                desc: "State-of-the-art labs, research centers, and digital learning tools.",
-              },
-            ].map((item, index) => (
-              <Card key={index} className="hover:shadow-lg transition">
-                <CardContent className="p-8">
-                  <h3 className="font-bold text-lg mb-3">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
+            <Card>
+              <CardContent className="p-8">
+                <h3 className="font-bold text-lg mb-3">
+                  Industry-Focused Curriculum
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Designed with industry partners to prepare you for
+                  high-demand cybersecurity careers.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-8">
+                <h3 className="font-bold text-lg mb-3">
+                  Global Recognition
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Accredited programs with international academic
+                  partnerships.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-8">
+                <h3 className="font-bold text-lg mb-3">
+                  Modern Campus
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Advanced labs, digital resources, and hands-on
+                  training environments.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
         {/* REQUIREMENTS */}
-        <section className="space-y-6">
-          <h2 className="text-4xl font-serif font-bold text-gray-900">
+        <section>
+          <h2 className="text-4xl font-serif font-bold mb-6">
             Admission Requirements
           </h2>
 
@@ -103,50 +118,45 @@ export default function Admissions() {
             <li>Official academic transcripts</li>
             <li>Statement of purpose</li>
             <li>Two recommendation letters</li>
-            <li>Proof of English proficiency (if applicable)</li>
+            <li>Proof of English proficiency (if required)</li>
           </ul>
         </section>
 
         {/* TIMELINE */}
-        <section className="space-y-6">
-          <h2 className="text-4xl font-serif font-bold text-gray-900">
+        <section>
+          <h2 className="text-4xl font-serif font-bold mb-6">
             Application Timeline
           </h2>
 
           <div className="text-gray-600 text-lg space-y-2">
-            <p><strong>Fall Intake:</strong> Jan 1 – June 30</p>
-            <p><strong>Spring Intake:</strong> Aug 1 – Nov 30</p>
+            <p><strong>Fall Intake:</strong> January 1 – June 30</p>
+            <p><strong>Spring Intake:</strong> August 1 – November 30</p>
           </div>
         </section>
 
-        {/* FAQ SECTION */}
-        <section className="space-y-10">
-          <h2 className="text-4xl font-serif font-bold text-center text-gray-900">
+        {/* FAQ ACCORDION */}
+        <section>
+          <h2 className="text-4xl font-serif font-bold text-center mb-10">
             Frequently Asked Questions
           </h2>
 
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-xl overflow-hidden"
-              >
+              <div key={index} className="border rounded-xl">
                 <button
-                  onClick={() =>
-                    setOpenFAQ(openFAQ === index ? null : index)
-                  }
-                  className="w-full flex justify-between items-center px-6 py-4 bg-white hover:bg-gray-50 transition text-left"
+                  onClick={() => setOpen(open === index ? null : index)}
+                  className="w-full flex justify-between items-center px-6 py-4 text-left"
                 >
-                  <span className="font-semibold text-gray-900">
+                  <span className="font-semibold">
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 transition-transform ${openFAQ === index ? "rotate-180 text-primary" : "text-gray-400"
+                    className={`w-5 h-5 transition-transform ${open === index ? "rotate-180 text-primary" : ""
                       }`}
                   />
                 </button>
 
-                {openFAQ === index && (
+                {open === index && (
                   <div className="px-6 pb-4 text-gray-600">
                     {faq.answer}
                   </div>
@@ -157,6 +167,6 @@ export default function Admissions() {
         </section>
 
       </div>
-    </motion.div>
+    </div>
   );
 }
