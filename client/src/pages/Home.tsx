@@ -102,7 +102,7 @@ export default function Home() {
                 Our state-of-the-art cyber labs provide a safe sandbox environment to practice offensive and defensive security techniques against live, modern threats.
               </p>
               <Link
-                href="/students"
+                href="/gallery"
                 className="inline-flex items-center px-6 py-3 border-2 border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition-all duration-200"
               >
                 Discover Student Life
