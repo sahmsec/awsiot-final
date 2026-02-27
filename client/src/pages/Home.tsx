@@ -60,7 +60,7 @@ export default function Home() {
           <div className="bg-[#1a1a1a] rounded-lg shadow-xl p-8 border-t-4 border-gray-600 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full group">
             <Users className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-serif font-bold mb-3 text-white">Elite Community</h3>
-            <p className="text-gray-400 mb-6 flex-grow">Join a network of passionate individuals. Learn, collaborate, and compete in CTF events with peers from around the globe.</p>
+            <p className="text-gray-400 mb-6 flex-grow">Join a network of passionate individuals. Learn, collaborate, and work on real-world security projects with peers from around the globe.</p>
             <Link href="/students" className="text-white font-bold flex items-center hover:text-primary transition-colors mt-auto">
               Meet Our Students <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
@@ -70,8 +70,8 @@ export default function Home() {
             <Award className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-serif font-bold mb-3 text-white">World-Class Faculty</h3>
             <p className="text-white/90 mb-6 flex-grow">Learn directly from seasoned security professionals, ethical hackers, and industry veterans with decades of real-world experience.</p>
-            <Link href="/courses/short-course" className="text-white font-bold flex items-center hover:underline mt-auto">
-              Explore Short Courses <ArrowRight className="w-4 h-4 ml-2" />
+            <Link href="/courses/diploma" className="text-white font-bold flex items-center hover:underline mt-auto">
+              Explore Professional Certifications <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
         </div>

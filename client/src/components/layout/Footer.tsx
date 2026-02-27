@@ -37,13 +37,15 @@ export function Footer() {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#bb1133] shrink-0" />
                 <span className="text-gray-400">
-                  +880 1310 333 444, +880 1885 841 489
+                  +880 1310 333 444 <br />
+                  +880 1885 841 489
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#bb1133] shrink-0" />
                 <span className="text-gray-400">
-                  info@arenawebsecurity.net
+                  info@arenawebsecurity.net <br />
+                  dh@arenawebsecurity.edu.bd
                 </span>
               </li>
             </ul>
@@ -56,9 +58,9 @@ export function Footer() {
               <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-[#bb1133]"></span>
             </h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/courses/diploma" className="text-gray-400 hover:text-[#bb1133] transition-colors">Diploma Programs</Link></li>
-              <li><Link href="/courses/short-course" className="text-gray-400 hover:text-[#bb1133] transition-colors">Short Courses</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Professional Certifications</Link></li>
+              <li><Link href="/courses/diploma" className="text-gray-400 hover:text-[#bb1133] transition-colors">Professional Diploma Programs</Link></li>
+              {/* <li><Link href="/courses/short-course" className="text-gray-400 hover:text-[#bb1133] transition-colors">Short Courses</Link></li> */}
+              {/* <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Professional Certifications</Link></li> */}
               <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Course Modules</Link></li>
               <li><Link href="/library" className="text-gray-400 hover:text-[#bb1133] transition-colors">E-Library</Link></li>
             </ul>
@@ -72,9 +74,9 @@ export function Footer() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li><Link href="/about-us" className="text-gray-400 hover:text-[#bb1133] transition-colors">About the Institute</Link></li>
-              <li><Link href="/apply" className="text-gray-400 hover:text-[#bb1133] transition-colors">Admissions Process</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Tuition & Financial Aid</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Campus News</Link></li>
+              <li><Link href="/apply" className="text-gray-400 hover:text-[#bb1133] transition-colors">Apply</Link></li>
+              {/* <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Tuition & Financial Aid</Link></li> */}
+              {/* <li><Link href="#" className="text-gray-400 hover:text-[#bb1133] transition-colors">Campus News</Link></li> */}
               <li><Link href="/contact" className="text-gray-400 hover:text-[#bb1133] transition-colors">Contact Us</Link></li>
             </ul>
           </div>
