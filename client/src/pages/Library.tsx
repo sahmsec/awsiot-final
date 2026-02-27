@@ -30,7 +30,7 @@ export default function Login() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900">
+        <h1 className="text-4xl md:text 4xl font-serif font-bold text-gray-900">
           <span className="border-b-4 border-primary/40 pb-2">
             Student Login Required
           </span>
