@@ -4,7 +4,27 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const NAVIGATION = [
+/* =========================
+   TYPES
+========================= */
+
+type NavLink = {
+  label: string;
+  href: string;
+};
+
+type NavDropdown = {
+  title: string;
+  items: NavLink[];
+};
+
+type NavItem = NavLink | NavDropdown;
+
+/* =========================
+   NAVIGATION
+========================= */
+
+const NAVIGATION: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   {
@@ -24,9 +44,21 @@ const NAVIGATION = [
       { label: "Library", href: "/library" },
     ],
   },
-  { label: "Admissions", href: "/admissions" }, // ✅ Only change
+  { label: "Admissions", href: "/admissions" },
   { label: "Contact", href: "/contact" },
 ];
+
+/* =========================
+   TYPE GUARD
+========================= */
+
+const isDropdown = (item: NavItem): item is NavDropdown => {
+  return "items" in item;
+};
+
+/* =========================
+   COMPONENT
+========================= */
 
 export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -34,20 +66,24 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location] = useLocation();
 
+  /* Close dropdown + mobile menu on route change */
   useEffect(() => {
     setActiveDropdown(null);
     setMobileMenuOpen(false);
   }, [location]);
 
+  /* Scroll effect */
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const renderNavItem = (item: any, isMobile = false) => {
+  /* Render link item */
+  const renderNavItem = (item: NavLink, isMobile = false) => {
     const baseClass = isMobile
       ? "block px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
       : "block px-4 py-2.5 text-[15px] text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors";
@@ -81,7 +117,6 @@ export function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
           <img
@@ -102,7 +137,7 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-4">
           {NAVIGATION.map((navItem) => {
-            if ("items" in navItem) {
+            if (isDropdown(navItem)) {
               return (
                 <div
                   key={navItem.title}
@@ -139,7 +174,7 @@ export function Header() {
                         className="absolute top-full left-0 mt-1 w-56 bg-white border border-gray-100 rounded-lg shadow-xl overflow-hidden py-1"
                       >
                         {navItem.items.map((item) =>
-                          renderNavItem(item, false)
+                          renderNavItem(item)
                         )}
                       </motion.div>
                     )}
@@ -150,7 +185,7 @@ export function Header() {
 
             return (
               <Link
-                key={navItem.label}
+                key={navItem.href}
                 href={navItem.href}
                 className={cn(
                   "px-3 py-2 rounded-md text-[15px] font-medium transition-all",
@@ -165,7 +200,7 @@ export function Header() {
           })}
         </nav>
 
-        {/* Apply Now Button (UNCHANGED) */}
+        {/* Apply Now Button */}
         <div className="hidden md:flex items-center">
           <Link
             href="/apply"
@@ -178,7 +213,7 @@ export function Header() {
         {/* Mobile Toggle */}
         <button
           className="md:hidden text-gray-600 hover:text-primary p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
         >
           {mobileMenuOpen ? (
             <X className="w-6 h-6" />
@@ -199,7 +234,7 @@ export function Header() {
           >
             <div className="px-4 py-4 flex flex-col space-y-1">
               {NAVIGATION.map((navItem) => {
-                if ("items" in navItem) {
+                if (isDropdown(navItem)) {
                   return (
                     <div key={navItem.title} className="py-2">
                       <div className="text-gray-400 text-[11px] font-bold uppercase tracking-wider px-3 mb-1">
@@ -214,7 +249,7 @@ export function Header() {
 
                 return (
                   <Link
-                    key={navItem.label}
+                    key={navItem.href}
                     href={navItem.href}
                     className="px-3 py-2.5 text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-50 rounded-md"
                   >
